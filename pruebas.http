@@ -1,0 +1,64 @@
+### Obtener todos los juegos
+GET http://localhost:5000/api/juegos
+Content-Type: application/json
+
+###
+
+### Crear un nuevo juego
+POST http://localhost:5000/api/juegos
+Content-Type: application/json
+
+{
+  "titulo": "Horizon Zero Dawn",
+  "genero": "Acción RPG",
+  "plataforma": "PlayStation 4",
+  "añoLanzamiento": 2017,
+  "desarrollador": "Guerrilla Games",
+  "imagenPortada": "https://image.api/horizon.jpg",
+  "descripcion": "Un juego de mundo abierto postapocalíptico.",
+  "completado": false
+}
+
+###
+
+### Obtener todas las reseñas
+GET http://localhost:5000/api/resenas
+Content-Type: application/json
+
+###
+
+### Crear reseña
+POST http://localhost:5000/api/resenas
+Content-Type: application/json
+
+{
+  "juegoId": "69219fc9993fd9f4f84c172a",
+  "puntuacion": 5,
+  "textoReseña": "Un juego excelente, muy inmersivo.",
+  "horasJugadas": 12,
+  "dificultad": "Normal",
+  "recomendaria": true
+}
+
+###
+
+### Obtener reseñas por juego
+GET http://localhost:5000/api/resenas/juego/PON_AQUÍ_EL_ID_DEL_JUEGO_CREADO
+Content-Type: application/json
+
+###
+
+### Actualizar reseña
+PUT http://localhost:5000/api/resenas/PON_AQUÍ_EL_ID_DE_LA_RESEÑA
+Content-Type: application/json
+
+{
+  "textoReseña": "Después de unas horas más, me pareció aún mejor.",
+  "horasJugadas": 20,
+  "puntuacion": 5
+}
+
+###
+
+### Eliminar reseña
+DELETE http://localhost:5000/api/resenas/PON_AQUÍ_EL_ID_DE_LA_RESEÑA
