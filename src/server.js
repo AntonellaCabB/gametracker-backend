@@ -13,6 +13,7 @@ app.use(express.json());
 connectDB();
 
 app.use('/api/juegos', require('./routes/juegosRoutes'));
+app.use('/api/resenas', require('./routes/resenasRoutes'));
 
 // Health check
 app.get('/', (req, res) => {
