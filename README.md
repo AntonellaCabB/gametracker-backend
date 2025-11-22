@@ -1,21 +1,11 @@
-# GameTracker Backend
+# GameTracker - Backend
 
-## Tecnologías
-- Node.js
-- Express
-- MongoDB Atlas
-- Mongoose
+Backend para GameTracker usando Node.js, Express y MongoDB Atlas.
 
-## Scripts
-- npm run start
-- npm run dev
+## Pasos para ejecutar
 
-## Rutas API
-### Juegos
-GET /api/juegos
-POST /api/juegos
-...
+1. npm install
+2. Configurar `.env`
+3. npm run dev
 
-### Reseñas
-GET /api/resenas
-...
+El servidor se ejecuta en http://localhost:5000
